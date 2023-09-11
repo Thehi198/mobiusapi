@@ -1,5 +1,9 @@
 // simple JS API displays "hello world"
 
-export default (req, res) => {
-    res.status(200).json({ name: 'John Doe' })
-  }
+export async function GET(Request) {
+    return new Response("hello world", {
+        headers: { "content-type": "text/plain" },
+    });
+}
+
+// Path: app/api/server/route.js
