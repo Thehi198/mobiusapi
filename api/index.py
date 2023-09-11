@@ -81,7 +81,7 @@ class index(BaseModel):
 
 
 
-@app.get("/api/server/query")
+@app.post("/api/server/query")
 async def searchexe(request_body: index):
     #output = search(query.question, query.namespace, query.index, query.chat_history)
     output = {"name": request_body.name,
