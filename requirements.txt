@@ -1,2 +1,7 @@
 fastapi==0.100.1
 uvicorn[standard]==0.23.2
+langchain==0.0.219
+pinecone_client==2.2.2
+cohere==4.11.2
+anthropic==0.2.10
+python-dotenv==1.0.0
